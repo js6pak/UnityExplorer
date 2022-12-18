@@ -5,7 +5,9 @@ using HarmonyLib;
 using UnityExplorer.Config;
 using UnityExplorer.Loader.BIE;
 #if CPP
-using BepInEx.IL2CPP;
+using BepInEx.Unity.IL2CPP;
+#elif MONO && BIE6
+using BepInEx.Unity.Mono;
 #endif
 
 namespace UnityExplorer
